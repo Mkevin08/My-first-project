@@ -1,0 +1,221 @@
+git config --global user.name "Mkevin08"
+git config --global user.email "mkevin4118@gmail.com"
+2025-05-28 19:27:08.710 [info] [main] Log level: Info
+2025-05-28 19:27:08.710 [info] [main] Validating found git in: "C:\Program Files\Git\cmd\git.exe"
+2025-05-28 19:27:08.756 [info] [main] Using git "2.45.1.windows.1" from "C:\Program Files\Git\cmd\git.exe"
+2025-05-28 19:27:08.757 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-28 19:27:08.923 [info] > git rev-parse --show-toplevel [144ms]
+2025-05-28 19:27:08.991 [info] > git rev-parse --git-dir --git-common-dir [60ms]
+2025-05-28 19:27:09.006 [info] [Model][openRepository] Opened repository (path): c:\Users\Admin\Desktop\Kevin
+2025-05-28 19:27:09.006 [info] [Model][openRepository] Opened repository (real path): c:\Users\Admin\Desktop\Kevin
+2025-05-28 19:27:09.013 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-28 19:27:09.027 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:27:09.141 [info] > git config --get commit.template [121ms]
+2025-05-28 19:27:09.144 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [118ms]
+2025-05-28 19:27:09.145 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:27:09.255 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [97ms]
+2025-05-28 19:27:09.256 [info] > git status -z -uall [105ms]
+2025-05-28 19:27:09.287 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:27:09.483 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [200ms]
+2025-05-28 19:27:09.483 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:27:09.499 [info] > git config --get commit.template [219ms]
+2025-05-28 19:27:09.546 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [277ms]
+2025-05-28 19:27:09.546 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:27:09.547 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for main: Error: No such branch: main.
+2025-05-28 19:27:09.656 [info] > git status -z -uall [154ms]
+2025-05-28 19:27:09.663 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [158ms]
+2025-05-28 19:27:09.685 [info] > git check-ignore -v -z --stdin [130ms]
+2025-05-28 19:27:24.975 [info] > git show --textconv :Index.html [264ms]
+2025-05-28 19:27:25.012 [info] > git show --textconv HEAD:Index.html [288ms]
+2025-05-28 19:27:25.069 [info] > git ls-files --stage -- Index.html [325ms]
+2025-05-28 19:27:25.122 [info] > git ls-tree -l HEAD -- Index.html [358ms]
+2025-05-28 19:27:25.123 [info] fatal: Not a valid object name HEAD
+2025-05-28 19:27:25.370 [info] > git hash-object -t tree /dev/null [350ms]
+2025-05-28 19:27:25.371 [warning] [GitFileSystemProvider][readFile] File not found - git:/c%3A/Users/Admin/Desktop/Kevin/Index.html.git?%7B%22path%22%3A%22c%3A%5C%5CUsers%5C%5CAdmin%5C%5CDesktop%5C%5CKevin%5C%5CIndex.html%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-28 19:27:25.465 [info] > git cat-file -s 0eedbae27e6c4bcb5e7abf87c2431b43e097c966 [375ms]
+2025-05-28 19:27:25.485 [info] > git hash-object -t tree /dev/null [352ms]
+2025-05-28 19:27:25.486 [warning] [GitFileSystemProvider][stat] File not found - git:/c%3A/Users/Admin/Desktop/Kevin/Index.html.git?%7B%22path%22%3A%22c%3A%5C%5CUsers%5C%5CAdmin%5C%5CDesktop%5C%5CKevin%5C%5CIndex.html%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-28 19:27:28.022 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [130ms]
+2025-05-28 19:27:28.022 [info] fatal: bad revision 'refs/heads/main'
+2025-05-28 19:27:28.023 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/main"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/main'\n"
+}
+2025-05-28 19:27:59.352 [info] > git -c user.useConfigOnly=true commit --quiet [194ms]
+2025-05-28 19:27:59.352 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-05-28 19:27:59.560 [info] > git config --get-all user.name [201ms]
+2025-05-28 19:27:59.574 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:27:59.694 [info] > git config --get commit.template [126ms]
+2025-05-28 19:27:59.695 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [121ms]
+2025-05-28 19:27:59.695 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:27:59.828 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [120ms]
+2025-05-28 19:27:59.833 [info] > git status -z -uall [132ms]
+2025-05-28 19:28:17.441 [info] > git -c user.useConfigOnly=true commit --quiet [111ms]
+2025-05-28 19:28:17.442 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-05-28 19:28:17.563 [info] > git config --get-all user.name [117ms]
+2025-05-28 19:28:17.577 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:28:17.719 [info] > git config --get commit.template [148ms]
+2025-05-28 19:28:17.734 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [157ms]
+2025-05-28 19:28:17.734 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:28:17.863 [info] > git status -z -uall [124ms]
+2025-05-28 19:28:17.877 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [133ms]
+2025-05-28 19:28:32.775 [info] > git -c user.useConfigOnly=true commit --quiet [117ms]
+2025-05-28 19:28:32.775 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-05-28 19:28:32.911 [info] > git config --get-all user.name [128ms]
+2025-05-28 19:28:32.930 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:28:33.066 [info] > git config --get commit.template [145ms]
+2025-05-28 19:28:33.073 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [143ms]
+2025-05-28 19:28:33.074 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:28:33.203 [info] > git status -z -uall [125ms]
+2025-05-28 19:28:33.213 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [129ms]
+2025-05-28 19:28:42.431 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [116ms]
+2025-05-28 19:28:42.431 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-05-28 19:28:42.575 [info] > git config --get-all user.name [139ms]
+2025-05-28 19:28:42.585 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:28:42.725 [info] > git config --get commit.template [141ms]
+2025-05-28 19:28:42.734 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [140ms]
+2025-05-28 19:28:42.734 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:28:42.874 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [130ms]
+2025-05-28 19:28:42.879 [info] > git status -z -uall [139ms]
+2025-05-28 19:28:48.155 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:28:48.291 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [136ms]
+2025-05-28 19:28:48.292 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:28:48.304 [info] > git config --get commit.template [155ms]
+2025-05-28 19:28:48.459 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [139ms]
+2025-05-28 19:28:48.461 [info] > git status -z -uall [147ms]
+2025-05-28 19:29:03.012 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [126ms]
+2025-05-28 19:29:03.012 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-05-28 19:29:03.153 [info] > git config --get-all user.name [135ms]
+2025-05-28 19:29:03.167 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:29:03.327 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [160ms]
+2025-05-28 19:29:03.327 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:29:03.333 [info] > git config --get commit.template [173ms]
+2025-05-28 19:29:03.487 [info] > git status -z -uall [148ms]
+2025-05-28 19:29:03.489 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [144ms]
+2025-05-28 19:29:16.880 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [125ms]
+2025-05-28 19:29:16.881 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-05-28 19:29:17.033 [info] > git config --get-all user.name [147ms]
+2025-05-28 19:29:17.044 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:29:17.194 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [142ms]
+2025-05-28 19:29:17.194 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:29:17.198 [info] > git config --get commit.template [157ms]
+2025-05-28 19:29:17.348 [info] > git status -z -uall [143ms]
+2025-05-28 19:29:17.364 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [154ms]
+2025-05-28 19:30:59.514 [info] > git show --textconv :Untitled-1.txt [233ms]
+2025-05-28 19:30:59.518 [warning] [GitFileSystemProvider][readFile] File not found - git:/c%3A/Users/Admin/Desktop/Kevin/Untitled-1.txt.git?%7B%22path%22%3A%22c%3A%5C%5CUsers%5C%5CAdmin%5C%5CDesktop%5C%5CKevin%5C%5CUntitled-1.txt%22%2C%22ref%22%3A%22%22%7D
+2025-05-28 19:30:59.548 [info] > git ls-files --stage -- Untitled-1.txt [260ms]
+2025-05-28 19:30:59.551 [warning] [GitFileSystemProvider][stat] File not found - git:/c%3A/Users/Admin/Desktop/Kevin/Untitled-1.txt.git?%7B%22path%22%3A%22c%3A%5C%5CUsers%5C%5CAdmin%5C%5CDesktop%5C%5CKevin%5C%5CUntitled-1.txt%22%2C%22ref%22%3A%22%22%7D
+2025-05-28 19:30:59.735 [info] > git check-ignore -v -z --stdin [113ms]
+2025-05-28 19:31:00.251 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:31:00.399 [info] > git config --get commit.template [155ms]
+2025-05-28 19:31:00.411 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [160ms]
+2025-05-28 19:31:00.411 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:31:00.575 [info] > git status -z -uall [152ms]
+2025-05-28 19:31:00.581 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [144ms]
+2025-05-28 19:31:55.835 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:31:56.015 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [174ms]
+2025-05-28 19:31:56.016 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:31:56.034 [info] > git config --get commit.template [200ms]
+2025-05-28 19:31:56.193 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [145ms]
+2025-05-28 19:31:56.200 [info] > git status -z -uall [158ms]
+2025-05-28 19:32:35.944 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:32:36.106 [info] > git config --get commit.template [169ms]
+2025-05-28 19:32:36.135 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [192ms]
+2025-05-28 19:32:36.135 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:32:36.320 [info] > git status -z -uall [175ms]
+2025-05-28 19:32:36.330 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [169ms]
+2025-05-28 19:32:54.931 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [121ms]
+2025-05-28 19:32:54.931 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-05-28 19:32:55.062 [info] > git config --get-all user.name [125ms]
+2025-05-28 19:32:55.085 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-28 19:32:55.229 [info] > git config --get commit.template [155ms]
+2025-05-28 19:32:55.249 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [166ms]
+2025-05-28 19:32:55.249 [warning] [Git][getBranch] No such branch: main
+2025-05-28 19:32:55.389 [info] > git status -z -uall [133ms]
+2025-05-28 19:32:55.394 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [133ms]
